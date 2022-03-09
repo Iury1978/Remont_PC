@@ -370,6 +370,7 @@ h1, h2, h3, p {
   text-align: center;
   margin-bottom: 89px;
 }
+
 .work__cards {
   display: flex;
   flex-wrap: wrap;
@@ -377,6 +378,7 @@ h1, h2, h3, p {
   column-gap: 16px;
   margin-bottom: 100px;
 }
+
 .work__card {
   display: flex;
   flex-direction: column;
@@ -423,4 +425,116 @@ h1, h2, h3, p {
   margin-bottom: 52px;
   margin: 0 auto;
   text-transform: uppercase;
+}
+
+/* section consultation */
+.consultation {
+  margin-top: 100px;
+}
+.main-consultation-wrapper{
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+}
+
+.consultation__disk {
+  position: absolute;
+  left: 60px;
+  top: -54px;
+  z-index: 10;
+}
+
+.consultation__usb-flash {
+  position: absolute;
+  left: 1160px;
+top: 448px;
+  z-index: 10;
+}
+
+.consultation__border {
+  position: relative;
+  border: 5px solid #FF6B00;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.consultation_bg {
+  width: 1180px;
+  height: 530px;
+  object-fit: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../src/fon_consultation.png);
+  margin-bottom: 74px;
+  margin-top: ;
+}
+
+.consultation__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  color: var(--gray-color);
+  margin-top: 81px;
+  margin-bottom: 21px;
+  text-align: center;
+  align-items: center;
+}
+
+.consultation__text {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  align-items: center;
+  color: var(--gray-color);
+  margin-bottom: 88px;
+}
+
+.consultation__items {
+
+  display: flex;
+  justify-content: center;
+  column-gap: 46px;
+  margin-bottom: 50px;
+}
+
+.button-user-name {
+  width: 278px;
+  height: 78px;
+  background: linear-gradient(91.97deg, #FFFFFF 0%, #FFFFFF 100%);
+  border: 3px solid #FF6B00;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button-user-phone {
+  width: 344px;
+  height: 78px;
+  background: linear-gradient(91.97deg, #FFFFFF 0%, #FFFFFF 100%);
+  border: 3px solid #FF6B00;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button-user-submit {
+  margin-right: 0;
+  width: 308px;
+  height: 78px;
+  background: linear-gradient(91.97deg, #FF6B00 0%, #F86800 100%);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  display: flex;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.consultation_confidential {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--gray-color);
+  margin-bottom: 82px;
 }
