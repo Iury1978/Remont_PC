@@ -332,39 +332,67 @@
 
     <!-- section consultation -->
 
-    <section class="consultation">
+    <section class="consultation bb">
       <div class="main-consultation-wrapper">
-      <img src="./src/disk.png" alt="компакт-диск" class="consultation__disk">
-      <img src="./src/usb-flash.png" alt="флэшка" class="consultation__usb-flash">
-      <div class="wrapper consultation_bg consultation__border">
-        <h1 class="consultation__title">
-          Нужна консультация?
+        <img src="./src/disk.png" alt="компакт-диск" class="consultation__disk">
+        <img src="./src/usb-flash.png" alt="флэшка" class="consultation__usb-flash">
+        <div class="wrapper consultation_bg consultation__border">
+          <h1 class="consultation__title">
+            Нужна консультация?
+          </h1>
+          <p class="consultation__text">
+            Заполните форму ниже или просто позвоните <br> нам по телефону <b>8 (800) 867-78-78</b>
+          </p>
+
+          <form name="consultation__sign" method="post">
+            <div class="consultation__items">
+
+              <input type="text" name="user-name" class=" button-white button-user-name" placeholder="Имя">
+              <input type="text" name="user-phone" class=" button-white button-user-phone"
+                placeholder="8(927)567-88-99">
+              <button type="submit" class="button-orange button-user-submit">оставить заявку</button>
+
+            </div>
+          </form>
+          <p class="consultation_confidential">
+            Нажимая на кнопку Вы соглашаетесь с <u> <a href="!#">политикой конфиденциальности</a></u>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- block reviews -->
+
+    <div class="reviews">
+      <div class="main-wrapper bb">
+
+        <h1 class="rewiews__title">
+          У нас более 1 000 положительных отзывов
         </h1>
-        <p class="consultation__text">
-          Заполните форму ниже или просто позвоните <br> нам по телефону <b>8 (800) 867-78-78</b>
-        </p>
-
-        <form name="consultation__sign" method="post">
-          <div class="consultation__items">
-
-            <input type="text" name="user-name" class=" button-white button-user-name" placeholder="Имя">
-            <input type="text" name="user-phone" class=" button-white button-user-phone" placeholder="8(927)567-88-99">
-            <button type="submit" class="button-orange button-user-submit">оставить заявку</button>
-
+        <div class="reviews__flex-container bbb">
+          
+          <div class="arrow__left">
+            <span class="arrow__left-picture"></span>
           </div>
-        </form>
-<p class="consultation_confidential">
-  Нажимая на кнопку Вы соглашаетесь с <u> <a href="!#">политикой конфиденциальности</a></u>
-  
 
-</p>
+          <img src="./src/pic_review.png" alt="пример отзыва" class="rewiews__rewiew bb">
+          
+          <div class="arrow__right">
+            <span class="arrow__right-picture"></span>
+          </div>
+          
+        </div>
+       
 
+        
 
       </div>
 
 
+
+
     </div>
-    </section>
 
   </main>
 </body>
