@@ -169,7 +169,27 @@ h1, h2, h3, p {
   align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  position: relative;
 }
+.header-down__link::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  position: absolute;
+  background: #FFFFFF;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 23px;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.header-down__link:hover::after, .header-down__link:focus::after, .header-down__link:active::after {
+  width: 100%;
+  opacity: 1;
+}
+
 
 /* Intro */
 
@@ -310,7 +330,8 @@ h1, h2, h3, p {
 }
 
 .advantages__line {
-  border: 2px solid var(--blue-color);
+  height: 3px;
+  background-color: var(--blue-color);
   width: 290px;
   margin-bottom: 41px;
 }
@@ -673,7 +694,26 @@ h1, h2, h3, p {
   line-height: 19px;
   text-transform: uppercase;
   color: #FFFFFF;
+  position: relative;
 
+}
+.footer__navigation-link::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  position: absolute;
+  background: #FFFFFF;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 23px;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.footer__navigation-link:hover::after, .footer__navigation-link:focus::after, .footer__navigation-link:active::after {
+  width: 100%;
+  opacity: 1;
 }
 
 .footer__logo {
