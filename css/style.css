@@ -75,18 +75,9 @@ h1, h2, h3, p {
   margin: 0;
 }
 
-.bb {
-  border: 1px solid red;
-}
-
-.bbb {
-  border: 1px solid rgb(17, 0, 255);
-}
-
 .main-wrapper {
   width: 1440px;
   margin: 0 auto;
-
 }
 
 .wrapper {
@@ -190,11 +181,9 @@ h1, h2, h3, p {
   opacity: 1;
 }
 
-
 /* Intro */
 
 .left-block__text-1 {
-
   width: 646px;
   font-weight: 600;
   font-size: 40px;
@@ -287,6 +276,10 @@ h1, h2, h3, p {
 
 /* section our advantages */
 
+.fon-blue {
+  background: url(../src/bg_blue.png);
+  background-repeat: no-repeat;
+}
 .main-advantages-wrapper {
   width: 1440px;
   margin: 0 auto;
@@ -302,14 +295,13 @@ h1, h2, h3, p {
   margin: 0 auto;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.13);
   border-radius: 5px;
-  margin-bottom: 110px;
+  margin-bottom: 180px;
 }
 
 .advantages-design-wires {
   position: absolute;
   left: 101px;
   top: -100px;
-
   z-index: -1;
 }
 
@@ -347,7 +339,6 @@ h1, h2, h3, p {
 }
 
 .advantages__items {
-
   width: 176px;
 }
 
@@ -371,7 +362,7 @@ h1, h2, h3, p {
   color: #000000;
 }
 
-/*  section iur work */
+/*  section our work */
 
 .our-work__title {
   font-weight: 500;
@@ -379,8 +370,7 @@ h1, h2, h3, p {
   line-height: 130%;
   align-items: center;
   text-align: center;
-  color: var(--gray-color);
-  margin-top: 66px;
+  color: white;
   margin-bottom: 19px;
 }
 
@@ -390,6 +380,7 @@ h1, h2, h3, p {
   line-height: 35px;
   text-align: center;
   margin-bottom: 89px;
+  color: white;
 }
 
 .work__cards {
@@ -397,7 +388,7 @@ h1, h2, h3, p {
   flex-wrap: wrap;
   row-gap: 22px;
   column-gap: 16px;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
 }
 
 .work__card {
@@ -451,7 +442,6 @@ h1, h2, h3, p {
 /* section consultation */
 .consultation {
   margin-top: 100px;
-
 }
 
 .main-consultation-wrapper {
@@ -487,7 +477,6 @@ h1, h2, h3, p {
   height: 530px;
   object-fit: cover;
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../src/fon_consultation.png);
-  margin-top: 110px;
   margin-bottom: 110px;
 }
 
@@ -513,7 +502,6 @@ h1, h2, h3, p {
 }
 
 .consultation__items {
-
   display: flex;
   justify-content: center;
   column-gap: 46px;
@@ -563,6 +551,12 @@ h1, h2, h3, p {
 }
 
 /* block reviews */
+.reviews-bg {
+  background: url(../src/bg_reviews.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 1px 0;
+}
 
 .rewiews__title {
   font-weight: 500;
@@ -571,15 +565,13 @@ h1, h2, h3, p {
   align-items: center;
   text-align: center;
   color: var(--gray-color);
-  margin-top: 77px;
   margin-bottom: 97px;
+  margin-top: 181px;
 }
 
 .rewiews__rewiew {
   display: block;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.12));
-  margin: 0;
-
 }
 
 .arrow__right-picture {
@@ -609,7 +601,7 @@ h1, h2, h3, p {
   align-items: center;
   justify-content: center;
   column-gap: 22px;
-  margin-bottom: 123px;
+  margin-bottom: 251px;
 }
 
 /* section contacts */
@@ -695,8 +687,8 @@ h1, h2, h3, p {
   text-transform: uppercase;
   color: #FFFFFF;
   position: relative;
-
 }
+
 .footer__navigation-link::after {
   content: "";
   width: 10%;
