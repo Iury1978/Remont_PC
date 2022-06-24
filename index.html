@@ -8,69 +8,73 @@
   <title>Скорая компьютерная помощь</title>
 
   <link rel="apple-touch-icon" sizes="72x72" href="./src/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
-<link rel="manifest" href="./src/favicon/site.webmanifest">
-<link rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./src/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script defer src="/js/index.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="main-wrapper">
-      <div class="header-up wrapper">
+    <div class="container">
+      <div class="header__up">
 
         <img class="header__logo" src="./src/logo-min.png" alt="Логотип компании">
 
-        <div class="header-up__info info">
-          <div class="info__list">
-            <p class="info__item">город Кишинев</p>
-            <p class="info__item">парк Афганцев</p>
+        <div class="header__up_info">
+          <div class="header__up_list">
+            <p class="header__up_item">город Кишинев </p>
+            <p class="header__up_item">Московский проспект</p>
           </div>
-          <div class="info__list">
-            <p class="info__item">Для выезда на дом</p>
-            <a href="tel:+373022111111" class="info__item info__item-bold">+373 (022) 111111</a>
+          <div class="header__up_list">
+            <p class="header__up_item">Для выезда на дом</p>
+            <a href="tel:+373022111111" class="header__up_item header__up_item-bold">+373 (022) 111111</a>
           </div>
-          <div class="info__list">
-            <p class="info__item">Для консультации онлайн</p>
-            <a href="tel:+373022111111" class="info__item info__item-bold">+373 (022) 111111</a>
+          <div class="header__up_list">
+            <p class="header__up_item">Для консультации онлайн</p>
+            <a href="tel:+373022111111" class="header__up_item header__up_item-bold">+373 (022) 111111</a>
           </div>
         </div>
 
-        <button type="button" class="header-up_button button">Заказать звонок</button>
+        <button type="button" class="header__up_button">Заказать звонок</button>
 
       </div>
-
-      <div class="header-down main-wrapper">
-        <nav class="header-down__navigation">
-          <ul class="header-down__list">
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">Ремонт компьютеров</a>
+    </div>
+    <div class="header__down-container">
+      <div class="header__down container ">
+        <nav class="header__down_navigation">
+          <ul class="header__down_list">
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">Ремонт компьютеров</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">Ремонт ноутбуков</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">Ремонт ноутбуков</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">прайс</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">прайс</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">о частном мастере</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">о частном мастере</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">отзывы</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">отзывы</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">статьи</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">статьи</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">контакты</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">контакты</a>
             </li>
-            <li class="header-down__item">
-              <a class="header-down__link" href="!#">карта сайта</a>
+            <li class="header__down_item">
+              <a class="header__down_link" href="!#">карта сайта</a>
             </li>
           </ul>
         </nav>
@@ -83,111 +87,104 @@
     <!-- section intro -->
 
     <div class="intro">
-      <div class="main-wrapper wrapper">
-        <div class="intro__flex-block">
-          <div class="left-block">
+      <div class="container">
+        <div class="intro__flex">
+          <div class="intro__left">
 
-            <div class="left-block__text">
-              <p class="left-block__text-1">
-                Профессиональный ремонт <span>компьютеров и ноутбуков с</span>
+            <div class="intro__left_text">
+              <h1 class="intro__left_title">
+                Профессиональный ремонт
+                <span>компьютеров и ноутбуков с</span>
+                <span class="intro__left_title-addition">бесплатным выездом на дом и в офис!</span>
+              </h1>
+
+              <p class="intro__left_text1">
+                &mdash; Работаем в Кишиневе
               </p>
-              <p class="left-block__text-2">
-                бесплатным выездом на дом и в офис!
-              </p>
-              <p class="left-block__text-3">
-                Работаем в Кишиневе
-              </p>
-              <p class="left-block__text-4">
+              <p class="intro__left_text2">
                 Рассчитайте стоимость и сроки ремонта онлайн или закажите звонок
                 и мы перезвоним Вам в течение 30 секунд.
               </p>
             </div>
 
-            <div class="left-block__buttons">
+            <div class="intro__left_buttons">
               <button type="button" class="button-orange button">рассчитать стоимость</button>
               <button type="button" class="button-white button">Заказать звонок</button>
             </div>
 
           </div>
 
-          <img class="right-block__img" src="./src/man-min.png" alt="человек ремонтирует компьютер">
+          <img class="intro__right" src="./src/man-min.png" alt="человек ремонтирует компьютер">
 
         </div>
       </div>
     </div>
-
-    <!-- Section our advantages -->
-    <div class=" main-wrapper fon-blue">
+    <!-- общий фон на 3 блока -->
+    <div class="general__bg">
+      <!-- Section our advantages -->
       <section class="advantages">
-        <div class="main-advantages-wrapper">
-
-          <img src="./src/wires-min.png" class="advantages-design-wires" alt="провода">
-          <img src="./src/screwdriver-min.png" class="advantages-design-screwdriver" alt="отвертка">
-
-          <div class="advantages__wrapper">
-
-            <h1 class="advantages__title">
+        <div class="container">
+          <div class="advantages__block">
+            <img src="./src/wires-min.png" class="advantages__design-wires" alt="провода">
+            <img src="./src/screwdriver-min.png" class="advantages__design-screwdriver" alt="отвертка">
+            <h2 class="advantages__title">
               Наши преимущества
-            </h1>
-
-            <div class="advantages__line">
-            </div>
+            </h2>
 
             <div class="advantages__list">
 
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_01-min.png" alt="Выезд и диагностика - бесплатно">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_01-min.png" alt="Выезд и диагностика - бесплатно">
+                  <figcaption class="advantages__desc">
                     Выезд и диагностика - бесплатно
                   </figcaption>
                 </figure>
               </div>
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_02-min.png" alt="Срочный ремонт на дому за 60 минут">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_02-min.png" alt="Срочный ремонт на дому за 60 минут">
+                  <figcaption class="advantages__desc">
                     Срочный ремонт на дому за 60 минут
                   </figcaption>
                 </figure>
               </div>
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_03-min.png" alt="Гарантия на работу до 3-х лет">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_03-min.png" alt="Гарантия на работу до 3-х лет">
+                  <figcaption class="advantages__desc">
                     Гарантия на работу до 3-х лет
                   </figcaption>
                 </figure>
               </div>
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_04-min.png" alt="Мастера с опытом более 10 лет">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_04-min.png" alt="Мастера с опытом более 10 лет">
+                  <figcaption class="advantages__desc">
                     Мастера с опытом более 10 лет
                   </figcaption>
                 </figure>
               </div>
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_05-min.png" alt="Скидка пенсионерам">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_05-min.png" alt="Скидка пенсионерам">
+                  <figcaption class="advantages__desc">
                     Скидка пенсионерам
                   </figcaption>
                 </figure>
               </div>
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_06-min.png" alt="Оригинальные комплектующие">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_06-min.png" alt="Оригинальные комплектующие">
+                  <figcaption class="advantages__desc">
                     Оригинальные комплектующие
                   </figcaption>
                 </figure>
               </div>
               <div class="advantages__items">
                 <figure class="advantages__item">
-                  <img class="advantages__item-pic" src="./src/adv_07-min.png"
-                    alt="Консультация  и расчет стоимости онлайн">
-                  <figcaption class="advantages__item-text">
+                  <img class="advantages__img" src="./src/adv_07-min.png" alt="Консультация  и расчет стоимости онлайн">
+                  <figcaption class="advantages__desc">
                     Консультация и расчет стоимости онлайн
                   </figcaption>
                 </figure>
@@ -199,22 +196,23 @@
       </section>
 
       <!-- section our work -->
-      <section class="our-work">
-        <div class="main-wrapper wrapper">
+      <section class="work">
+        <div class="container">
 
-          <h1 class="our-work__title">
+          <h2 class="work__title">
             Устраним любую неисправность
-          </h1>
-          <p class="our-work__text">
-            Чтобы уточнить итоговую цену - закажите <u>обратный звонок</u> <br> или просто позвоните нам по телефону <a
-              href="tel:+373022111111">+373 (022) 111111</a>
+          </h2>
+          <p class="work__text">
+            Чтобы уточнить итоговую цену - закажите
+            <button type="button" class="work__btn"><u>обратный звонок</u></button> <br> или
+            просто позвоните нам по телефону <a href="tel:+373022111111">+373 (022) 111111</a>
           </p>
 
           <div class="work__cards">
 
             <div class="work__card">
               <img src="./src/work01-min.jpg" alt="систмный блок в ремонте" class="work__img">
-              <h2 class="card__title">Выезд и диагностика</h2>
+              <h2 class="work__card_title">Выезд и диагностика</h2>
               <ul class="work__list">
                 <li class="work__item">
                   Доставка техники курьером
@@ -229,11 +227,11 @@
                   Подменная техника на время ремонта
                 </li>
               </ul>
-              <button class="button-orange button card-button">БЕСПЛАТНО</button>
+              <button class="work__button button-orange button">БЕСПЛАТНО</button>
             </div>
             <div class="work__card">
               <img src="./src/work02-min.jpg" alt="ремонт ноутбука" class="work__img">
-              <h2 class="card__title">Ремонт ноутбуков</h2>
+              <h2 class="work__card_title">Ремонт ноутбуков</h2>
               <ul class="work__list">
                 <li class="work__item">
                   Замена экрана
@@ -248,11 +246,11 @@
                   Ремонт и замена модулей
                 </li>
               </ul>
-              <button class="button-orange button card-button">от 490 руб</button>
+              <button class="work__button button-orange button">от 490 руб</button>
             </div>
             <div class="work__card">
               <img src="./src/work03-min.jpg" alt="ремонт системного блока" class="work__img">
-              <h2 class="card__title">Ремонт компьютеров</h2>
+              <h2 class="work__card_title">Ремонт компьютеров</h2>
               <ul class="work__list">
                 <li class="work__item">
                   Ремонт и замена деталей
@@ -267,11 +265,11 @@
                   Профилактические работы
                 </li>
               </ul>
-              <button class="button-orange button card-button">от 390 руб</button>
+              <button class="work__button button-orange button">от 390 руб</button>
             </div>
             <div class="work__card">
               <img src="./src/work04-min.jpg" alt="человек за ноутбуком" class="work__img">
-              <h2 class="card__title">Компьютерная помощь
+              <h2 class="work__card_title">Компьютерная помощь
               </h2>
               <ul class="work__list">
                 <li class="work__item">
@@ -287,11 +285,11 @@
                   Удаление вирусов
                 </li>
               </ul>
-              <button class="button-orange button card-button">от 190 руб</button>
+              <button class="work__button button-orange button">от 190 руб</button>
             </div>
             <div class="work__card">
               <img src="./src/work05-min.jpg" alt="человек и два монитора" class="work__img">
-              <h2 class="card__title">Восстановление</h2>
+              <h2 class="work__card_title">Восстановление</h2>
               <ul class="work__list">
                 <li class="work__item">
                   Восстановление фото
@@ -306,11 +304,11 @@
                   Ремонт жесткого диска
                 </li>
               </ul>
-              <button class="button-orange button card-button">от 350 руб</button>
+              <button class="work__button button-orange button">от 350 руб</button>
             </div>
             <div class="work__card">
               <img src="./src/work06-min.jpg" alt="человек с ноутбуком" class="work__img">
-              <h2 class="card__title"> Настройка интернета</h2>
+              <h2 class="work__card_title"> Настройка интернета</h2>
               <ul class="work__list">
                 <li class="work__item">
                   Установка Wifi роутера
@@ -325,7 +323,7 @@
                   Интернет подключение
                 </li>
               </ul>
-              <button class="button-orange button card-button">от 350 руб</button>
+              <button class="work__button button-orange button">от 350 руб</button>
             </div>
 
           </div>
@@ -335,26 +333,27 @@
       <!-- section consultation -->
 
       <section class="consultation">
-        <div class="main-consultation-wrapper">
+        <div class="container">
+          <div class="consultation__block">
+            <img src="./src/disk-min.png" alt="компакт-диск" class="consultation__disk">
+            <img src="./src/usb-flash-min.png" alt="флэшка" class="consultation__usb-flash">
 
-          <img src="./src/disk-min.png" alt="компакт-диск" class="consultation__disk">
-          <img src="./src/usb-flash-min.png" alt="флэшка" class="consultation__usb-flash">
 
-          <div class="wrapper consultation_bg consultation__border">
 
             <h1 class="consultation__title">
               Нужна консультация?
             </h1>
             <p class="consultation__text">
-              Заполните форму ниже или просто позвоните <br> нам по телефону <b>8 (800) 867-78-78</b>
+              Заполните форму ниже или просто позвоните <br> нам по телефону
+              <a href="tel:+373022111111"><b>+373 (022) 111111</b></a>
             </p>
 
             <form name="consultation__sign" method="post">
               <div class="consultation__items">
-                <input type="text" name="user-name" class=" button-white button-user-name" placeholder="Имя">
-                <input type="text" name="user-phone" class=" button-white button-user-phone"
-                  placeholder="8(927)567-88-99">
-                <button type="submit" class="button-orange button-user-submit">оставить заявку</button>
+                <input type="text" name="user-name" class="consultation__user-name  button-white" placeholder="Имя">
+                <input type="tel" name="user-phone" class="consultation__user-phone  button-white"
+                  placeholder="+(373)79-11-11">
+                <button type="submit" class="consultation__btn-submit button button-orange">оставить заявку</button>
               </div>
             </form>
 
@@ -370,33 +369,29 @@
     <!-- block reviews -->
 
     <div class="reviews">
-      <div class="main-wrapper">
-        <div class="wpapper">
-          <div class="reviews-bg">
+      <div class="container">
+        <h1 class="rewiews__title">
+          У нас более 1 000 положительных отзывов
+        </h1>
 
-            <h1 class="rewiews__title">
-              У нас более 1 000 положительных отзывов
-            </h1>
+        <div class="reviews__flex-container">
 
-            <div class="reviews__flex-container">
+          <button type="button" class="reviews__btn-left">
+            <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.3049 1L3 28L36.3049 55" stroke="#FF6B00" stroke-width="3" />
+            </svg>
+          </button>
 
-              <button type="button" class="button-arrow-left">
-                <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M36.3049 1L3 28L36.3049 55" stroke="#FF6B00" stroke-width="3" />
-                </svg>
-              </button>
-
-              <img src="./src/pic_review-min.png" alt="пример отзыва" class="rewiews__rewiew">
-
-              <button type="button" class="button-arrow-right">
-                <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.69509 55L35 28L1.6951 0.999999" stroke="#FF6B00" stroke-width="3" />
-                </svg>
-
-              </button>
-
-            </div>
+          <div class="rewiews__rewiew">
+            <img src="./src/pic_review-min.png">
           </div>
+
+          <button type="button" class="reviews__btn-right">
+            <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.69509 55L35 28L1.6951 0.999999" stroke="#FF6B00" stroke-width="3" />
+            </svg>
+          </button>
+
         </div>
       </div>
     </div>
@@ -404,47 +399,52 @@
     <!-- section contacts -->
 
     <section class="contacts">
-      <div class="wrapper">
+      <div class="container">
 
-        <div class="contаcts__flex-container">
-          <div class="left__block">
+        <div class="contаcts__wrapper">
+          <div class="contacts__info">
 
-            <h1 class="contacts__title">
-              Контакты
-            </h1>
+            <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__text">
-              <span>Адрес:</span> г.Кишинев, парк Афганцев <br>
-              <span>Телефон: <a href="tel:+373022111111">+373 (022) 111111</a></span><br>
-              <span>E-mail: <a href="mailto:htmlcss@gmail.com">htmlcss@gmail.com</a></span>
+              <span>Адрес:</span>
+              г.Кишинев, парк Афганцев
+            </p>
+            <p class="contacts__text">
+              <span>Телефон:</span>
+              <a href="tel:+373022111111">+373 (022) 111111</a>
+            </p>
+            <p class="contacts__text">
+              <span>E-mail:</span>
+              <a href="mailto:htmlcss@gmail.com">htmlcss@gmail.com</a>
+            </p>
+
 
             <ul class="contacts__social">
-              <li class="social__item">
-                <a href="!#" class="social__link">
-                  <img src="./src/socials_01_whatsapp-min.png" alt="Ватсап" class="social__pic">
+              <li class="contacts__item">
+                <a href="!#" class="contacts__link">
+                  <img src="./src/socials_01_whatsapp-min.png" alt="Ватсап" class="contacts__pic">
                 </a>
               </li>
-              <li class="social__item">
-                <a href="!#" class="social__link">
-                  <img src="./src/socials_02_viber-min.png" alt="Вайбер" class="social__pic">
+              <li class="contacts__item">
+                <a href="!#" class="contacts__link">
+                  <img src="./src/socials_02_viber-min.png" alt="Вайбер" class="contacts__pic">
                 </a>
               </li>
-              <li class="social__item">
-                <a href="!#" class="social__link">
-                  <img src="./src/socials_03_vk-min.png" alt="ВКонтакте" class="social__pic">
+              <li class="contacts__item">
+                <a href="!#" class="contacts__link">
+                  <img src="./src/socials_03_vk-min.png" alt="ВКонтакте" class="contacts__pic">
                 </a>
               </li>
-              <li class="social__item">
-                <a href="!#" class="social__link">
-                  <img src="./src/socials_04_telegram-min.png" alt="Телеграм" class="social__pic">
+              <li class="contacts__item">
+                <a href="!#" class="contacts__link">
+                  <img src="./src/socials_04_telegram-min.png" alt="Телеграм" class="contacts__pic">
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="right_block">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.5157942107326!2d28.862797915903293!3d47.04973147915166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cfb9dc31fa3%3A0x5d5bc44a7557912a!2z0JDRhNCz0LDQvdGB0LrQuNC5INCf0LDRgNC6!5e0!3m2!1sru!2s!4v1646910709279!5m2!1sru!2s"
-              width="680" height="404" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="contacts__map-wrapper">
+            <div class="contacts__map" id="map"></div>
           </div>
         </div>
       </div>
@@ -452,8 +452,8 @@
   </main>
 
   <footer>
-    <div class="main-wrapper">
-      <div class="footer__navigation">
+    <div class="footer__container ">
+      <div class="footer__wrapper">
 
         <img src="./src/logo-min.png" alt="логотип" class="footer__logo">
 
@@ -484,12 +484,14 @@
           </li>
         </ul>
 
-        <a href="tel:+373022111111" class="footer-call"><img src="./src/footer-phone-min.png"
+        <a href="tel:+373022111111" class="footer__call"><img src="./src/footer-phone-min.png"
             alt="изображение телефонной трубки" class="footer__phone-pic"></a>
 
       </div>
     </div>
   </footer>
+
+
 </body>
 
 </html>
